@@ -47,3 +47,40 @@ Hello! In this tutorial I will install Active Directory within Azure Virtual Mac
 <a>- Username: Labuser</a>
 
 <a>- Password: Password1</a>
+
+<a> These credentials were created in Azure when we created the DC Virtual Machine</a>
+<P>Using Remote Desktop Connection log into your Domain Controller<P/>
+<b>On the Server Manager click Add Roles and Features > Click Next >> Confirm private ip address of the Domain Controller </b>
+<img src="https://imgur.com/cPd0uAR.png">
+
+<b>Check Active Directory Domain Services</b>
+<img src="https://i.imgur.com/J82rwBq.png">
+
+<b>Click Add Features > Click Next>> </b>
+<img src="https://i.imgur.com/XxfA8EI.png">
+
+<b>Click Install</b>
+<img src="https://i.imgur.com/s40t1Hw.png">
+
+<h2> Promote as a DC</h2>
+<b>Click Promote this Server to a Domain Controller</b>
+
+<img src="https://i.imgur.com/Qfha5Cd.png">
+
+<b> Click Add a New Forest</b>
+<img src="https://i.imgur.com/WZWtV9s.png">
+
+<b>Choose a password</b>
+<img src="https://i.imgur.com/zSiTLwu.png">
+<img src="https://i.imgur.com/Qx2l8Oo.png">
+
+<b>Click Install</b>
+<img src="https://i.imgur.com/QkN1oD2.png">
+
+The DC will lose connection.
+
+<h2> Log back into the DC with new credentials. Example: </h2>
+
+- Username: mydomain.com\Labuser</a>
+
+- Password: Password1</a>
