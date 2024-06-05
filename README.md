@@ -24,3 +24,26 @@ Hello! In this tutorial I will install Active Directory within Azure Virtual Mac
 
 <h2> Set the Domain Controller's Private ip to Static</h2>
 <b> On the Azure Portal click Domain controller > Click Networking > Click  Network Interface</b>
+<img src="https://i.imgur.com/9DlbGza.png">
+<b>Click ip Configurations</b>
+<img src="https://imgur.com/Xs71iST.png">
+<b>Switch Toggle to Static > Click Save</b>
+<img src="https://i.imgur.com/Lq6jVwr.png">
+
+<h2> Set the Client DNS settings</h2>
+<p> Also in the Azure Portal copy the Domain Controllers private IP
+<img src="https://i.imgur.com/UPzntYa.png">
+
+<b>Go to the Client's VM Overview > Click Networking > Click on Network Interface > </b>
+<img src="https://imgur.com/Lxk4gSf.png">
+
+<b>Click Ip configurations > Toggle to CUSTOM and Type in the domain's private ip address> Click Save</b>
+<img src="https://i.imgur.com/ERVrOgU.png">
+
+<b>Restart the Client VM</b>
+<img src="https://imgur.com/sgSfpHN.png">
+
+<h2> Log into Domain Controller </h2>
+<a>- Username: Labuser</a>
+
+<a>- Password: Password1</a>
